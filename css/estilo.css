@@ -61,6 +61,10 @@ figcaption{
     padding-left: 12px;
 }
 
+.dropdown{
+    display: none;
+}
+
 /*Bloco Principal (menu, editor, projeto)*/
 main{
     background-color: rgba(5, 29, 59, 1);
@@ -326,25 +330,37 @@ input[type="color"]::-webkit-color-swatch {
 
 @media screen and (max-width:1024px){
     /*Superior*/
+    .container{
+        margin: 0 0.5% 0 0.5%;
+    }
+    #barraDePesquisa{
+        width: 100%;
+    }
     #input-busca{
-        width: 431px;
+        width: 92%;
         height: 56px;
         margin-left: 20px;
     }
-    
     .avatar{
-        margin-left: 66px;
+        display: none;  
     }
-    
-    nav{
-        display: none;
+    .menu{
+        padding: 0;
+        margin: 0;
+    }
+    .dropdown{
+        width: 24;
+        height: 24px;
+        display: inline;
+    }
+    .container-tablet{
+        width: 100%;
     }
     /*Bloco Principal*/
     main{
         display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        align-items: center;
+        justify-content: space-around;
+        flex-direction: row-reverse;
         padding-top: 20px;
         height: auto;
     }
@@ -382,4 +398,5 @@ input[type="color"]::-webkit-color-swatch {
         width: 92%;
         height: 56px;
     }
+    
 }
