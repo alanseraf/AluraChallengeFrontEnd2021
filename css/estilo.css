@@ -31,10 +31,10 @@ header{
     border: none;
     background-color: rgba(255, 255, 255, 0.160);
     color: white;
-    margin-left: -20px;
+    margin-right: 160px;
 }
 
-.avatar{
+.conatainer .avatar{
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -138,6 +138,10 @@ main{
 
 .menu-btn p:hover {
     cursor: pointer;
+}
+
+.avatar-menu{
+    display: none;
 }
 
 /*Projeto - Informações*/
@@ -333,7 +337,7 @@ input[type="color"]::-webkit-color-swatch {
     .container{
         margin: 0 0.5% 0 0.5%;
     }
-    #barraDePesquisa{
+    #barraDePesquisa{   
         width: 100%;
     }
     #input-busca{
@@ -341,14 +345,33 @@ input[type="color"]::-webkit-color-swatch {
         height: 56px;
         margin-left: 20px;
     }
-    .avatar{
+    .container .avatar{
         display: none;  
     }
+  
     .menu{
-        display: none;
-        padding: 0;
-        margin: 0;
+        /* display: none; */
+        padding: 2%;
+        border-radius: 8px;
+        background-color: rgba(255, 255, 255, 0.160);
+        margin-right: 6%;
     }
+
+    .menu .avatar-menu{
+        display: flex;
+        margin-top: 20%;    
+        border-top: 1px solid rgba(255, 255, 255, 0.13) ;
+        padding-top: 20%;
+        padding-left: 4%;
+        width: 100%;
+    }
+
+    .avatar-menu .avatar {
+        display: flex;
+        align-items: center;
+
+    }
+
     .dropdown{
         width: 24;
         height: 24px;
@@ -359,8 +382,8 @@ input[type="color"]::-webkit-color-swatch {
         display: flex;
         justify-content: space-between  ;
         flex-wrap: wrap;
-        padding-top: 20px;
         height: auto;
+        padding: 1% 2% 4% 1%;
     }
     .container-projeto{
         display: flex;
@@ -379,8 +402,10 @@ input[type="color"]::-webkit-color-swatch {
         justify-content: space-evenly;
         align-items: center;
         align-content: stretch;
-        width: 97%;
+        width: 50%;
+        flex-grow: 1;
         order: -1;
+        margin-right: 2%;
     }
     .editor-fundo{
         width: 92%;
@@ -395,8 +420,12 @@ input[type="color"]::-webkit-color-swatch {
         height: 32px;
     }
     .highlight{
+        margin-top: 4%;
         width: 92%;
         height: 56px;
+    }
+    .projeto legend{
+        margin-top: 4%;
     }
     
 }
