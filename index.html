@@ -24,7 +24,10 @@
                 <img class="perfil" src="img/avatar.jpg" alt="Fotografia de Perfil">
                 <figcaption>Harry</p>
             </figure>
-            <img class="dropdown" src="img/dropdown.svg" alt="menu">
+            <div class="menuDropDown">
+                <label id="menuDropDown__botao"><img class="menuDropDown__imagem" src="img/dropdown.svg" alt="menu"></label>
+                <input type="checkbox" id="menuDropDown__botao">
+            </div>
         </div> 
     </header>
     <main>
@@ -69,19 +72,21 @@
                     <label class="label-projeto" for="input-descricaoProjeto">Descrição do Projeto</label>
                     <input type="text" id="input-descricaoProjeto" placeholder="Descrição do seu Projeto">
                 </div>
-                <div class="projeto">
-                    <legend>PERSONALIZAÇÃO</legend>
-                    <select>
-                        <option>JavaScript</option>
-                        <option>HTML</option>
-                        <option>CSS</option>
-                        <option>Python</option>
-                    </select>
-                </div>
-                <div class="projeto">
-                    <label class="label-projeto" for="input-colorpicker">Escolha a cor de fundo do editor</label>
-                    <div class="fundo-input">
-                        <input type="color" id="input-colorpicker" value="#6BD1FF">
+                <div class="personalizacao">
+                    <div class="projeto">
+                        <legend>PERSONALIZAÇÃO</legend>
+                        <select>
+                            <option>JavaScript</option>
+                            <option>HTML</option>
+                            <option>CSS</option>
+                            <option>Python</option>
+                        </select>
+                    </div>
+                    <div class="projeto">
+                        <label class="label-projeto" for="input-colorpicker">Escolha a cor de fundo do editor</label>
+                        <div class="fundo-input">
+                            <input type="color" id="input-colorpicker" value="#6BD1FF">
+                        </div>
                     </div>
                 </div>
                 <div class="projeto">

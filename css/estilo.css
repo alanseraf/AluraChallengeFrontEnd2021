@@ -61,7 +61,7 @@ figcaption{
     padding-left: 12px;
 }
 
-.dropdown{
+#menuDropDown__botao{
     display: none;
 }
 
@@ -329,6 +329,25 @@ input[type="color"]::-webkit-color-swatch {
     background-color: rgba(255, 255, 255, 0.240);
 }
 
+#menuDropDown {
+    display: none;
+}
+
+label [for="menuDropDown__botao"]{
+    display: none;
+}
+
+#menuDropDown__botao{
+    display: none;
+}
+
+#menuDropDown{
+    display: none;
+}
+#menuDropDown__imagem {
+    display: none;
+}
+
 
 /*Media Query - Tablet*/
 
@@ -350,7 +369,7 @@ input[type="color"]::-webkit-color-swatch {
     }
   
     .menu{
-        /* display: none; */
+        display: none;
         padding: 2%;
         border-radius: 8px;
         background-color: rgba(255, 255, 255, 0.160);
@@ -372,11 +391,30 @@ input[type="color"]::-webkit-color-swatch {
 
     }
 
-    .dropdown{
+    #menuDropDown{
+        display: inline-block;
+    }
+
+    #menuDropDown__botao{
+        display: block;
+    }
+    .menuDropDown__imagem{
+        display: inline-block;
         width: 24;
         height: 24px;
-        display: inline;
     }
+    label[for="menuDropDown__botao"]{
+        display: block;
+    }
+    #menuDropDown__botao:checked ~ .menu {
+        display: unset;
+    }
+
+
+
+
+
+
     /*Bloco Principal*/
     main{
         display: flex;
@@ -427,5 +465,44 @@ input[type="color"]::-webkit-color-swatch {
     .projeto legend{
         margin-top: 4%;
     }
+
+    .personalizacao .projeto:nth-child(1){
+        width: 47%;
+        padding: 0;
+        margin: 0;
+    }
+    .personalizacao .projeto:nth-child(2){
+        width: 47%;
+        padding: 0;
+        margin: 0;
+    }
+    .personalizacao{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 92%;
+        height: 120px;
+        text-align: center;
+    }
+    #input-colorpicker{
+        height: 46px;
+        border: solid 1px rgba(5, 29, 59, 1);
+        border-radius: 8px;
+    }
     
 }
+
+
+    /* Menu responsivo*/
+		
+
+		/* @media screen and (max-width:630px) {
+            label[for="menuDropDown__botao"]{
+                display: block;
+                border: none;
+            }
+            #menuDropDown__botao:checked ~ #menu-topo {
+                display: inline-block;
+                border: none;
+            }
+        } */
