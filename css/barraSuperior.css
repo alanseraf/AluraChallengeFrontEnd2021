@@ -20,17 +20,16 @@
     border: none;
     background-color: rgba(255, 255, 255, 0.160);
     color: white;
-    margin-right: 160px;
+    margin-right: 80px;
 }
 
-.conatainer .avatar{
+.container .avatar{
     display: flex;
     align-items: center;
     justify-content: flex-end;
     width: 106px;
     height: 56px;
     padding-right: 22px;
-    margin-left: 66px;
 }
 
 .avatar:hover{
@@ -52,4 +51,14 @@ figcaption{
 
 #menuDropDown__botao{
     display: none;
+}
+
+#barraDePesquisa__botao{
+    display: none;
+}
+
+#barraDePesquisa__imagem{
+    display: none;
+    width: 24px;
+    height: 24px;
 }
