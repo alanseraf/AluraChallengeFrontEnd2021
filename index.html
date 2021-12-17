@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/barraSuperior.css">
+    <link rel="stylesheet" href="css/blocoPrincipal.css">
+    <link rel="stylesheet" href="css/responsivo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
@@ -24,13 +27,13 @@
                 <img class="perfil" src="img/avatar.jpg" alt="Fotografia de Perfil">
                 <figcaption>Harry</p>
             </figure>
-            <div class="menuDropDown">
-                <label id="menuDropDown__botao"><img class="menuDropDown__imagem" src="img/dropdown.svg" alt="menu"></label>
-                <input type="checkbox" id="menuDropDown__botao">
+            <div id="menuDropDown">
+                <label for="menuDropDown__botao"><img id="menuDropDown__imagem" src="img/dropdown.svg" alt="menu"></label>  
             </div>
         </div> 
     </header>
     <main>
+        <input type="checkbox" id="menuDropDown__botao">
         <nav class="menu">
             <h2>Menu</h2>
             <div class="menu-btn">

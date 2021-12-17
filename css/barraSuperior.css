@@ -1,0 +1,55 @@
+/*Barra superior (logo, pesquisa, perfil)*/
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 32px 0 32px;
+}
+
+.logo{
+    width: 145px;
+    height: 34.05px;
+}
+
+#input-busca{
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    width: 748px;
+    height: 56px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.160);
+    color: white;
+    margin-right: 160px;
+}
+
+.conatainer .avatar{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 106px;
+    height: 56px;
+    padding-right: 22px;
+    margin-left: 66px;
+}
+
+.avatar:hover{
+    background-color: rgba(255, 255, 255, 0.080);
+}
+
+
+.perfil{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+figcaption{
+    font-size: 1em;
+    text-align: center;
+    padding-left: 12px;
+}
+
+#menuDropDown__botao{
+    display: none;
+}
