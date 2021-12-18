@@ -11,10 +11,12 @@ header{
 
 main{
     background-color: rgba(5, 29, 59, 1);
-    height: 9999px;
+    min-height: 100vh;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding-top: 20px;
+    width: 100%;
 }
 
 a{
