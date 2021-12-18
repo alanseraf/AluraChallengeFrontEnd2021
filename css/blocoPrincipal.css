@@ -1,10 +1,7 @@
 /*Bloco Principal (menu, editor, projeto)*/
 
 
-/*Menu*/
-.menu {
-    padding-left: 32px;
-}
+/*Botoes do Menu*/
 
 .fundo-btn-editor{
     background-color: #5081FB;
@@ -48,6 +45,59 @@
 
 .fundo-btn-comunidade:focus{
     background-color: rgba(255, 255, 255, 0.240);
+}
+
+
+/*Página Comunidade*/
+
+.fundo-btn-editor-p2{
+    background-color: rgba(255, 255, 255, 0.080);
+    width: 48px;
+    height: 48px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fundo-btn-editor-p2:hover{
+    background-color: rgba(255, 255, 255, 0.160);
+    cursor: pointer;
+}
+.fundo-btn-editor-p2:active{
+    border: 2px solid rgba(255, 255, 255, 0.240);
+}
+
+.fundo-btn-editor-p2:focus{
+    background-color: rgba(255, 255, 255, 0.240);
+}
+
+.fundo-btn-comunidade-p2{
+    background-color: #5081FB;
+    width: 48px;
+    height: 48px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fundo-btn-comunidade-p2:hover{
+    background-color: #7BA4FC;
+    cursor: pointer;
+}
+.fundo-btn-comunidade-p2:active{
+    border: 2px solid rgba(80, 128, 251, .720);
+}
+
+.fundo-btn-comunidade-p2:focus{
+    background-color:  rgb(150, 185, 253);
+}
+
+
+/*Menu*/
+.menu {
+    padding-left: 32px;
 }
 
 .menu-btn {
