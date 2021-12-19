@@ -23,3 +23,9 @@ a{
     text-decoration: none;
     color: unset;
 }
+
+h1{
+    font-size: 21px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
