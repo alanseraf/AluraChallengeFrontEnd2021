@@ -206,9 +206,76 @@
         left: 40%;
         background-color: #2D415B;
         height: 79%;
+    }
+}
 
+/* Responsivo da Página Comunidade */
 
+@media screen and (max-width:1024px){
+    .comunidade__grid{
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+    .editor-container.comunidade{
+        width: 90%;
+        height: auto;
+        max-width: unset;
+        padding: 2% 0 0 0;
+        margin: 0;
+        justify-content: unset;
     }
     
-
+    .comunidade .editor-fundo{
+        background-color: #6BD1FF;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .comunidade #editor{
+        width: 90%;
+        height: 73%;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .comunidade .bolinhas {
+        width: 90%;
+        height: 32px;
+    }
+    .rodape__editor_container{
+        height: auto;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .rodape__editor_container h1, .rodape__editor_container p, .rodape__editor{
+        padding: 0 4%;
+    }
+    .rodape__editor_container h1{
+        padding-top: 4%;
+    }
+    .rodape__editor{
+        padding-top: 30px;
+        padding-bottom: 4%;
+        width: 90%;
+    }
+    .rodape__editor p{
+        margin-left: 10px;
+    }
+    .pagina2{
+        padding: 0;
+        margin: 0;
+    }
+    #menuDropDown__botao:checked ~ .comunidade{
+        display: block;
+        position: absolute;
+        left: 70%;
+        background-color: #2D415B;
+        height: 79%;
+    }
 }
