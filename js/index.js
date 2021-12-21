@@ -11,3 +11,4 @@ function trocaCor (evento){
     fundo.style.backgroundColor = input.value
 }
 })()
+

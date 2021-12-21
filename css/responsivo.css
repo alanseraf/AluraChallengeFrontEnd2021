@@ -94,7 +94,7 @@
         width: 92%;
         height: 398px;  
     }
-    #editor{
+    .editor{
         width: 90%;
         height: 302px;
     }
@@ -190,7 +190,7 @@
         width: 92%;
         height: 520px;  
     }
-    #editor{
+    .editor{
         width: 84%;
         height: 84%
     }
@@ -235,7 +235,7 @@
         margin: 0;
     }
     
-    .comunidade #editor{
+    .comunidade .editor{
         width: 90%;
         height: 73%;
         padding: 0;

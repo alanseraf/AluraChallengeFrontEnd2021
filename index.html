@@ -63,9 +63,12 @@
                         <img src="img/bolinha_amarela.svg" alt>
                         <img src="img/bolinha_verde.svg" alt>
                     </ul>
-                    <textarea name="editor" id="editor" placeholder="Cole aqui o seu código" rows="10" cols="50"></textarea> 
+                    
+                    <div class="codigo-wrapper">
+                        <code class="editor hljs" contenteditable="true" aria-label="Editor de código"></code>
+                    </div>
                 </div>
-                <input type="submit" value="Visualizar com o highlight" class="highlight">
+                <button class="highlight">Visualizar com o highlight</button>
             </div>
             <div class="container-projeto">
                 <div class="projeto">
@@ -77,12 +80,11 @@
                 </div>
                 <div class="personalizacao">
                     <div class="projeto">
-                        <legend>PERSONALIZAÇÃO</legend>
-                        <select>
-                            <option>JavaScript</option>
-                            <option>HTML</option>
-                            <option>CSS</option>
-                            <option>Python</option>
+                        <label for="linguagem">PERSONALIZAÇÃO</label>
+                        <select name="linguagem" id="linguagem" class="linguagem"> 
+                            <option value="javascript">JavaScript</option>
+                            <option value="html">HTML</option>
+                            <option value="css">CSS</option>
                         </select>
                     </div>
                     <div class="projeto">
@@ -97,7 +99,9 @@
                 </div>
             </div>
     </main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js"></script>
 <script src="js/index.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+<script src="js/editor.js"></script>
+
 </body>
 </html>
