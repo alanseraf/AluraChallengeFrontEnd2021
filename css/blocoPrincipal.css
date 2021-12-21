@@ -247,40 +247,52 @@ input[type="color"]::-webkit-color-swatch {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 470px;
+    min-height: 470px;
+    height: auto;
 }
 
 .editor-fundo{
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
     background-color: #6BD1FF;
     width: 752px;
-    height: 398px;
+    min-height: 398px;
+    height: auto;
     border-radius: 8px;
+    padding-top: 4%;
+}
+.fundo-preto{
+    background-color: black;
+    width: 92%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+}
+.codigo-wrapper {
+    width: 100%;
+    background-color: black;
 }
 
 .editor{
-    background-color: black;
-    width: 688px;
-    height: 302px;
+    display: block;
+    box-sizing: border-box;
+    white-space: pre-wrap;
+    width: 100%;
+    min-height: 302px;
+    height: auto;
     border-radius: 0 0 8px 8px; 
     color: white;
-    border: none;
 }
 
+
 .bolinhas {
-    background-color: black;
-    width: 692px;
-    height: 32px;
-    border-radius: 8px 8px 0 0;
-    padding:0
+    margin-bottom: 1%;
 }
 
 .bolinha-vermelha{
-    padding-left: 8px;
-    padding-top: 14px;;
+    padding: 14px 0 0 8px;
+
 }
 
 .highlight{
