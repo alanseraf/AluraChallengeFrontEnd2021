@@ -57,7 +57,7 @@
             </div>
         </nav> 
             <div class="editor-container">
-                <div class="editor-fundo" data-form-fundo>
+                <div class="editor-fundo" data-form-editor>
                     <div class="fundo-preto">
                         <ul class="bolinhas">
                             <img class="bolinha-vermelha" src="img/bolinha_vermelha.svg" alt>
@@ -75,9 +75,9 @@
                 <div class="projeto">
                     <legend>SEU PROJETO</legend>
                     <label class="label-projeto" for="input-NomeDoProjeto">Nome do Projeto</label>
-                    <input type="text" id="input-nomeDoProjeto" placeholder="Nome do seu projeto">
+                    <input type="text" id="input-nomeDoProjeto" placeholder="Nome do seu projeto" data-form-titulo>
                     <label class="label-projeto" for="input-descricaoProjeto">Descrição do Projeto</label>
-                    <input type="text" id="input-descricaoProjeto" placeholder="Descrição do seu Projeto">
+                    <input type="text" id="input-descricaoProjeto" placeholder="Descrição do seu Projeto" data-form-descricao>
                 </div>
                 <div class="personalizacao">
                     <div class="projeto">
@@ -96,13 +96,13 @@
                     </div>
                 </div>
                 <div class="projeto">
-                    <input type="submit" value="Salvar projeto" class="salvar">
+                    <input type="submit" value="Salvar projeto" class="salvar" data-button-salvar>
                 </div>
             </div>
     </main>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js"></script>
 <script src="js/index.js"></script>
 <script src="js/editor.js"></script>
-
+<script src="js/salvarCodigo.js"></script>
 </body>
 </html>
