@@ -282,8 +282,6 @@ input[type="color"]::-webkit-color-swatch {
     border-radius: 0 0 8px 8px; 
     color: white;
 }
-
-
 .bolinhas {
     margin-bottom: 1%;
 }
@@ -325,16 +323,19 @@ input[type="color"]::-webkit-color-swatch {
 }
 
 /*Página Comunidade - editor*/
+
+
 .comunidade__grid{
-    width: 83%;
+    width: 80%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 0.5%
+
 }
 
 .editor-container.comunidade{
-    height: 470px;
+    height: auto;
     width: 48%;
     max-width: 700px;
     margin-top: 1%;
@@ -346,6 +347,7 @@ input[type="color"]::-webkit-color-swatch {
     width: 100%;
     height: 288px;
     border-radius: 8px;
+    margin-top: 4%;
 }
 
 .comunidade .editor{
