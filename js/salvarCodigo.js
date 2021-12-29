@@ -5,25 +5,35 @@ const botaoSalvar = document.querySelector('[data-button-salvar]')
 const codigoDestaque = document.querySelector('[data-form-codigo]')
 const tituloTag = document.querySelector('[data-form-titulo]')
 const descricaoTag = document.querySelector('[data-form-descricao]')
-const input = document.querySelector('[data-form-input]');
+const input = document.querySelector('[data-form-input]')
+const linguagemEscolhida = document.querySelector('.linguagem')
 
 
-//mudar o content editable para false
-
-// Criar função para o mesmo
-
-/*Criar event listener do click do botão salvar*/
-botaoSalvar.addEventListener('click', ()=>{
+function salvaValores(){
+    const CodigoSalvo = JSON.parse(localStorage.getItem("CodigoSalvo")) || []
     const tituloValor = tituloTag.value
-    console.log(tituloValor);
     const descricaoValor = descricaoTag.value
-    console.log(descricaoValor)
     const codigoDestaqueValor = codigoDestaque.innerText
-    console.log(codigoDestaqueValor);
     const corValor = input.value
-    console.log(corValor)
+    const linguagemValor = linguagemEscolhida.value
+   
+    const dados = {
+        tituloValor,
+        descricaoValor,
+        codigoDestaqueValor,
+        corValor,
+        linguagemValor
+    }   
     
-})
+    const CodigoSalvoAtualizado = [...CodigoSalvo, dados]
+    
+    localStorage.setItem("CodigoSalvo", JSON.stringify(CodigoSalvoAtualizado))
+    return dados
+}
+
+botaoSalvar.addEventListener('click', salvaValores())
+
+
 
 
 
@@ -69,7 +79,9 @@ export const carregaTarefa = () => {
     })
 }
 
+
 carregaTarefa()
+
 1.const que Percorre a arvore
 2.const que acessa o local storage
 3.limpa os dados anteriores
